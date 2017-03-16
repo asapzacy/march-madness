@@ -1,5 +1,8 @@
 import React from 'react'
-import { bracketContainer, regionContainer } from './styles.css'
+import { bracketContainer, regionContainer, gamesList, gameItem } from './styles.css'
+import { colors } from 'helpers/tournament'
+
+console.log(colors)
 
 const Bracket = ({ games, teams, data }) => (
   <main className={bracketContainer}>
@@ -7,24 +10,31 @@ const Bracket = ({ games, teams, data }) => (
   </main>
 )
 
-const Region = ({ x }) => (
+const Region = ({ x, teams }) => (
   <section className={regionContainer}>
-    { x.map((item, index) => <Game {...item} key={index} />) }
+    <Round x={x} teams={teams} />
   </section>
 )
 
-
-const Team = ({ seed, school, color }) => (
-  <section style={{backgroundColor:color}}>
-    {`#${seed} ${school}`}
-  </section>
+const Round = ({ x, teams }) => (
+  <ul className={gamesList}>
+    { x.sort((a, b) => a.bracketPositionId - b.bracketPositionId).map((item, index) => <Game {...item} teams={teams} key={index} />) }
+  </ul>
 )
 
-
-const Game = ({ away, home }) => (
-  <section>
-    {`${home.names.full} v. ${away.names.full}`}
-  </section>
+const Game = ({ away, home, seedBottom, seedTop }) => (
+  <li className={gameItem}>
+    <Team seed={seedTop} name={away.names.short} />
+    <Team seed={seedBottom} name={home.names.short} />
+  </li>
 )
 
 export default Bracket
+
+
+
+const Team = ({ seed, name, hex }) => (
+  <span style={{backgroundColor:colors[name]}}>
+    {`${seed} - ${name}`}
+  </span>
+)

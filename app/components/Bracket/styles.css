@@ -4,11 +4,12 @@
   height:100%;
   display:flex;
   flex-flow:column wrap;
+  color:#070707;
 }
 
 /* -------  region container  ------- */
 .regionContainer {
-  color:#070707;
+  display:flex;
   flex-basis:50%;
   background:#e4e4e4;
 }
@@ -16,5 +17,23 @@
 .regionContainer:last-child {
   background:#f5f5f5;
 }
-.regionContainer:nth-of-type(odd) {
+.gamesList {
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  flex-basis:25%;
+}
+.regionContainer:nth-last-of-type(-n+2) {
+  justify-content:flex-end;
+}
+.gameItem {
+  flex:1;
+  display:flex;
+  flex-wrap:wrap;
+}
+.gameItem span {
+  width:100%;
+  display:flex;
+  align-items:center;
 }
