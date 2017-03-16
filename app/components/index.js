@@ -1,3 +1,3 @@
 
 /* -------  base components  ------- */
-export Home from './Home/Home'
+export Bracket from './Bracket/Bracket'

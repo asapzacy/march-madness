@@ -1,12 +1,10 @@
 import React from 'react'
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
-import { MainContainer, HomeContainer } from 'containers'
+import { Router, Route, browserHistory } from 'react-router'
+import { BracketContainer } from 'containers'
 
 const routes = (
   <Router history={browserHistory}>
-    <Route path='/' component={MainContainer}>
-      <IndexRoute component={HomeContainer} />
-    </Route>
+    <Route path='/' component={BracketContainer} />
   </Router>
 )
 

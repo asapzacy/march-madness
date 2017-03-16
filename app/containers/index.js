@@ -1,6 +1,3 @@
 
-/* -------  main container  ------- */
-export MainContainer from './Main/MainContainer'
-
-/* -------  random containers  ------- */
-export HomeContainer from './Home/HomeContainer'
+/* -------  bracket containers  ------- */
+export BracketContainer from './Bracket/BracketContainer'

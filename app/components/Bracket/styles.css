@@ -1,0 +1,20 @@
+
+/* -------  bracket container  ------- */
+.bracketContainer {
+  height:100%;
+  display:flex;
+  flex-flow:column wrap;
+}
+
+/* -------  region container  ------- */
+.regionContainer {
+  color:#070707;
+  flex-basis:50%;
+  background:#e4e4e4;
+}
+.regionContainer:first-child,
+.regionContainer:last-child {
+  background:#f5f5f5;
+}
+.regionContainer:nth-of-type(odd) {
+}
