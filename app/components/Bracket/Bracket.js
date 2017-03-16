@@ -1,5 +1,6 @@
 import React from 'react'
-import { bracketContainer, regionContainer, gamesList, gameItem } from './styles.css'
+import { bracketContainer, regionContainer, gamesList, gameItem,
+  teamContainer, teamLogo, teamName } from './styles.css'
 import { colors } from 'helpers/tournament'
 
 console.log(colors)
@@ -24,17 +25,25 @@ const Round = ({ x, teams }) => (
 
 const Game = ({ away, home, seedBottom, seedTop }) => (
   <li className={gameItem}>
-    <Team seed={seedTop} name={away.names.short} />
-    <Team seed={seedBottom} name={home.names.short} />
+    <Team seed={seedBottom} name={away.names.short} seo={away.names.seo} />
+    <Team seed={seedTop} name={home.names.short} seo={home.names.seo} />
   </li>
 )
 
 export default Bracket
 
+const CORS = 'https://cors-anywhere.herokuapp.com/'
+const bgImg = (team) => `url('http://i.turner.ncaa.com/sites/default/files/cssu/mml/2017/teams/bgd/${team}.png')`
+const imgEl = (team) => `http://i.turner.ncaa.com/sites/default/files/cssu/mml/2017/teams/bgd/${team}.png`
 
-
-const Team = ({ seed, name, hex }) => (
-  <span style={{backgroundColor:colors[name]}}>
-    {`${seed} - ${name}`}
-  </span>
-)
+const Team = ({ seed, name, seo }) => {
+  const img = { background: `${bgImg(seo)} 50% 50% / contain no-repeat` }
+  // const img = { background: `${colors[name]} ${bgImg(seo)} 0.25em 50% / contain no-repeat` }
+  const bg = { backgroundColor: colors[name] }
+  return (
+    <section className={teamContainer} style={bg}>
+      <span className={teamLogo} style={img}></span>
+      <span className={teamName}>{`${seed} - ${name}`}</span>
+    </section>
+  )
+}

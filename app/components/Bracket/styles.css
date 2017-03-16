@@ -4,7 +4,6 @@
   height:100%;
   display:flex;
   flex-flow:column wrap;
-  color:#070707;
 }
 
 /* -------  region container  ------- */
@@ -22,18 +21,29 @@
   display:flex;
   flex-direction:column;
   justify-content:space-around;
-  flex-basis:25%;
+  flex-basis:30%;
 }
 .regionContainer:nth-last-of-type(-n+2) {
   justify-content:flex-end;
 }
 .gameItem {
+  font-size:0.8em;
+  font-weight:700;
   flex:1;
   display:flex;
   flex-wrap:wrap;
 }
-.gameItem span {
+.teamContainer {
   width:100%;
+  padding:4px 0;
   display:flex;
   align-items:center;
+}
+
+.teamLogo {
+  width:25%;
+  height:100%;
+}
+.teamName {
+
 }
