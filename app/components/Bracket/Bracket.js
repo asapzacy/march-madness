@@ -1,10 +1,9 @@
 import React from 'react'
+import { shortenTeamName } from 'helpers/utils'
+import { colors } from 'helpers/tournament'
 import { bracketContainer, regionLeft, regionRight, gamesList, gameItem,
   teamContainer, teamLogo, teamName, teamSeed, bullet, infoContainer,
-  logoContainer } from './styles.css'
-import { colors } from 'helpers/tournament'
-
-console.log(colors)
+  logoContainer, teamLossed } from './styles.css'
 
 const Bracket = ({ games, teams, data, round3 }) => (
   <main className={bracketContainer}>
@@ -24,20 +23,20 @@ const Round = ({ x, teams }) => (
   </ul>
 )
 
-const Game = ({ away, home, seedBottom, seedTop }) => (
+const Game = ({ away, home, seedBottom, seedTop, gameState }) => (
   <li className={gameItem}>
     {
       away.isTop === 'T'
-        ? <Team seed={seedTop} name={away.names.short} seo={away.names.seo} winner={away.score && away.winner} />
+        ? <Team seed={seedTop} name={away.names.short} seo={away.names.seo} winner={gameState === 'final' ? away.winner : ''} />
         : home.isTop === 'T'
-          ? <Team seed={seedTop} name={home.names.short} seo={home.names.seo} winner={home.score && home.winner} />
+          ? <Team seed={seedTop} name={home.names.short} seo={home.names.seo} winner={gameState === 'final' ? home.winner : ''} />
           : <section className={teamContainer}></section>
     }
     {
       away.isTop === 'F'
-        ? <Team seed={seedBottom} name={away.names.short} seo={away.names.seo} winner={away.score && away.winner} />
+        ? <Team seed={seedBottom} name={away.names.short} seo={away.names.seo} winner={gameState === 'final' ? away.winner : ''} />
         : home.isTop === 'F'
-          ? <Team seed={seedBottom} name={home.names.short} seo={home.names.seo} winner={home.score && home.winner} />
+          ? <Team seed={seedBottom} name={home.names.short} seo={home.names.seo} winner={gameState === 'final' ? home.winner : ''} />
           : <section className={teamContainer}></section>
     }
   </li>
@@ -51,7 +50,6 @@ const imgEl = (team) => `http://i.turner.ncaa.com/sites/default/files/cssu/mml/2
 
 const Team = ({ seed, name, seo, winner }) => {
   const img = { background: `${bgImg(seo)} 50% 50% / contain no-repeat` }
-  // const img = { background: `${colors[name]} ${bgImg(seo)} 0.25em 50% / contain no-repeat` }
   const bg = { backgroundColor: colors[name] }
   return (
     <section className={teamContainer} style={bg}>
@@ -61,7 +59,7 @@ const Team = ({ seed, name, seo, winner }) => {
       <div className={infoContainer}>
         <span className={teamSeed}>{seed}</span>
         <span className={bullet}>{'•'}</span>
-        <span className={teamName}>{name}</span>
+        <span className={winner === 'false' ? teamLossed : teamName}>{shortenTeamName(name)}</span>
       </div>
     </section>
   )
