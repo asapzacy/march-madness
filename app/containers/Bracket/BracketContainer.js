@@ -38,9 +38,10 @@ class BracketContainer extends Component {
   // }
   again() {
     const ye = this.state.games.reduce((arr, item) => {
+      console.log(item.bracketPositionId)
       const id = item.bracketPositionId % 100
       if (item.round === '2') {
-        if (id >= 0 && id <= 8) {
+        if (id >= 1 && id <= 8) {
           arr[0][0].push(item)
         } else if (id >= 9 && id <= 16) {
           arr[1][0].push(item)
@@ -50,7 +51,7 @@ class BracketContainer extends Component {
           arr[3][0].push(item)
         }
       } else if (item.round === '3') {
-        if (id >= 0 && id <= 4) {
+        if (id >= 1 && id <= 4) {
           arr[0][1].push(item)
         } else if (id >= 5 && id <= 8) {
           arr[1][1].push(item)
@@ -61,7 +62,7 @@ class BracketContainer extends Component {
         }
       }
       else if (item.round === '4') {
-        if (id >= 0 && id <= 2) {
+        if (id >= 1 && id <= 2) {
           arr[0][2].push(item)
         } else if (id >= 3 && id <= 4) {
           arr[1][2].push(item)
@@ -72,13 +73,13 @@ class BracketContainer extends Component {
         }
       }
       else if (item.round === '5') {
-        if (id === 0) {
+        if (id === 1) {
           arr[0][3].push(item)
-        } else if (id === 1) {
-          arr[1][3].push(item)
         } else if (id === 2) {
-          arr[2][3].push(item)
+          arr[1][3].push(item)
         } else if (id === 3) {
+          arr[2][3].push(item)
+        } else if (id === 4) {
           arr[3][3].push(item)
         }
       }
