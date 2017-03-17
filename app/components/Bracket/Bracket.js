@@ -28,17 +28,17 @@ const Game = ({ away, home, seedBottom, seedTop }) => (
   <li className={gameItem}>
     {
       away.isTop === 'T'
-        ? <Team seed={seedTop} name={away.names.short} seo={away.names.seo} />
+        ? <Team seed={seedTop} name={away.names.short} seo={away.names.seo} winner={away.score && away.winner} />
         : home.isTop === 'T'
-          ? <Team seed={seedTop} name={home.names.short} seo={home.names.seo} />
-          : null
+          ? <Team seed={seedTop} name={home.names.short} seo={home.names.seo} winner={home.score && home.winner} />
+          : <section className={teamContainer}></section>
     }
     {
       away.isTop === 'F'
-        ? <Team seed={seedBottom} name={away.names.short} seo={away.names.seo} />
+        ? <Team seed={seedBottom} name={away.names.short} seo={away.names.seo} winner={away.score && away.winner} />
         : home.isTop === 'F'
-          ? <Team seed={seedBottom} name={home.names.short} seo={home.names.seo} />
-          : null
+          ? <Team seed={seedBottom} name={home.names.short} seo={home.names.seo} winner={home.score && home.winner} />
+          : <section className={teamContainer}></section>
     }
   </li>
 )
@@ -49,7 +49,7 @@ const CORS = 'https://cors-anywhere.herokuapp.com/'
 const bgImg = (team) => `url('http://i.turner.ncaa.com/sites/default/files/cssu/mml/2017/teams/bgd/${team}.png')`
 const imgEl = (team) => `http://i.turner.ncaa.com/sites/default/files/cssu/mml/2017/teams/bgd/${team}.png`
 
-const Team = ({ seed, name, seo }) => {
+const Team = ({ seed, name, seo, winner }) => {
   const img = { background: `${bgImg(seo)} 50% 50% / contain no-repeat` }
   // const img = { background: `${colors[name]} ${bgImg(seo)} 0.25em 50% / contain no-repeat` }
   const bg = { backgroundColor: colors[name] }

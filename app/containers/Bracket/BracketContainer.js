@@ -60,6 +60,28 @@ class BracketContainer extends Component {
           arr[3][1].push(item)
         }
       }
+      else if (item.round === '4') {
+        if (id >= 0 && id <= 2) {
+          arr[0][2].push(item)
+        } else if (id >= 3 && id <= 4) {
+          arr[1][2].push(item)
+        } else if (id >= 5 && id <= 6) {
+          arr[2][2].push(item)
+        } else if (id >= 7 && id <= 8) {
+          arr[3][2].push(item)
+        }
+      }
+      else if (item.round === '5') {
+        if (id === 0) {
+          arr[0][3].push(item)
+        } else if (id === 1) {
+          arr[1][3].push(item)
+        } else if (id === 2) {
+          arr[2][3].push(item)
+        } else if (id === 3) {
+          arr[3][3].push(item)
+        }
+      }
       return arr
     }, [
         [
