@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "2.2.1",
-  "hash": "7bac137d87654d16a9fe",
+  "hash": "051c7ecc2dbec389659d",
   "publicPath": "/",
   "assetsByChunkName": {
     "main": [
@@ -64,7 +64,7 @@
         "bundle.js",
         "bundle.js.map"
       ],
-      "hash": "c304835998916d9c89ab",
+      "hash": "eaaf02f0256d367239be",
       "parents": [],
       "origins": [
         {
@@ -1070,9 +1070,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react-dom/lib/ReactUpdates.js",
-      "issuerId": 11,
-      "issuerName": "./~/react-dom/lib/ReactUpdates.js",
+      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react/lib/React.js",
+      "issuerId": 24,
+      "issuerName": "./~/react/lib/React.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -2138,9 +2138,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/fbjs/lib/warning.js",
-      "issuerId": 1,
-      "issuerName": "./~/fbjs/lib/warning.js",
+      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react/lib/ReactChildren.js",
+      "issuerId": 245,
+      "issuerName": "./~/react/lib/ReactChildren.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -2619,9 +2619,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react-dom/lib/findDOMNode.js",
-      "issuerId": 217,
-      "issuerName": "./~/react-dom/lib/findDOMNode.js",
+      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react/lib/ReactElement.js",
+      "issuerId": 25,
+      "issuerName": "./~/react/lib/ReactElement.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -4098,9 +4098,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react-dom/lib/findDOMNode.js",
-      "issuerId": 217,
-      "issuerName": "./~/react-dom/lib/findDOMNode.js",
+      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react-dom/lib/ReactMount.js",
+      "issuerId": 89,
+      "issuerName": "./~/react-dom/lib/ReactMount.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6042,9 +6042,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react-router/es/TransitionUtils.js",
-      "issuerId": 231,
-      "issuerName": "./~/react-router/es/TransitionUtils.js",
+      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react-router/es/getComponents.js",
+      "issuerId": 235,
+      "issuerName": "./~/react-router/es/getComponents.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -6339,9 +6339,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react/lib/ReactComponent.js",
-      "issuerId": 67,
-      "issuerName": "./~/react/lib/ReactComponent.js",
+      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react/lib/ReactPureComponent.js",
+      "issuerId": 250,
+      "issuerName": "./~/react/lib/ReactPureComponent.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -7180,9 +7180,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react-dom/lib/ReactUpdates.js",
-      "issuerId": 11,
-      "issuerName": "./~/react-dom/lib/ReactUpdates.js",
+      "issuer": "/Users/zacarellano/Desktop/march-madness/node_modules/react-dom/lib/ReactMount.js",
+      "issuerId": 89,
+      "issuerName": "./~/react-dom/lib/ReactMount.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -9438,7 +9438,7 @@
       "usedExports": true,
       "providedExports": null,
       "depth": 8,
-      "source": "exports = module.exports = require(\"../../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \".styles__bracketContainer___B38Sl{height:100%;display:-ms-flexbox;display:flex;-ms-flex-flow:column wrap;flex-flow:column wrap;border:.4em solid #070707}.styles__regionContainer___3O4l-{display:-ms-flexbox;display:flex;-ms-flex-preferred-size:50%;flex-basis:50%;background:#e4e4e4}.styles__regionContainer___3O4l-:first-child,.styles__regionContainer___3O4l-:last-child{background:#f5f5f5}.styles__gamesList___Si1xr{height:100%;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:distribute;justify-content:space-around;-ms-flex-preferred-size:30%;flex-basis:30%}.styles__gamesList___Si1xr:nth-child(2n){font-size:1.025em}.styles__gamesList___Si1xr:nth-child(2n) .styles__teamContainer___PpgUe{padding:16px 0}.styles__gamesList___Si1xr:nth-child(2n) .styles__logoContainer___1MEnf{-ms-flex-preferred-size:40%;flex-basis:40%}.styles__gamesList___Si1xr:nth-of-type(odd) .styles__teamContainer___PpgUe:nth-of-type(odd){background:#888}.styles__gamesList___Si1xr:nth-of-type(odd) .styles__teamContainer___PpgUe:nth-of-type(2n){background:#555}.styles__gamesList___Si1xr:nth-of-type(2n) .styles__teamContainer___PpgUe:nth-of-type(odd){background:#999}.styles__gamesList___Si1xr:nth-of-type(2n) .styles__teamContainer___PpgUe:nth-of-type(2n){background:#666}.styles__regionRight___2-sUj .styles__gamesList___Si1xr:nth-of-type(odd) .styles__teamContainer___PpgUe:nth-of-type(odd){background:#555}.styles__regionRight___2-sUj .styles__gamesList___Si1xr:nth-of-type(odd) .styles__teamContainer___PpgUe:nth-of-type(2n){background:#888}.styles__regionRight___2-sUj .styles__gamesList___Si1xr:nth-of-type(2n) .styles__teamContainer___PpgUe:nth-of-type(odd){background:#666}.styles__regionRight___2-sUj .styles__gamesList___Si1xr:nth-of-type(2n) .styles__teamContainer___PpgUe:nth-of-type(2n){background:#999}.styles__regionRight___2-sUj{-ms-flex-pack:end;justify-content:flex-end}.styles__regionRight___2-sUj,.styles__regionRight___2-sUj .styles__teamContainer___PpgUe{-ms-flex-direction:row-reverse;flex-direction:row-reverse}.styles__gameItem___no2Cr{font-size:.725em;font-weight:700;-ms-flex:1;flex:1;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.styles__teamContainer___PpgUe{width:100%;padding:4px 0;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}.styles__logoContainer___1MEnf{-ms-flex-preferred-size:20%;flex-basis:20%;height:100%}.styles__teamLogo___lTS2e{display:block;height:100%}.styles__infoContainer___1oabR{-ms-flex-preferred-size:80%;flex-basis:80%;display:-ms-flexbox;display:flex;-ms-flex-direction:inherit;flex-direction:inherit}.styles__teamSeed___1UWPr{-ms-flex-preferred-size:10%;flex-basis:10%;text-align:center}.styles__bullet___Ky2d3{-ms-flex-preferred-size:10%;flex-basis:10%;text-align:center}\", \"\", {\"version\":3,\"sources\":[\"/Users/zacarellano/Desktop/march-madness/app/components/Bracket/styles.css\"],\"names\":[],\"mappings\":\"AAEA,kCACE,YAAY,AACZ,oBAAa,AAAb,aAAa,AACb,0BAAsB,AAAtB,sBAAsB,AACtB,yBAA2B,CAC5B,AAGD,iCACE,oBAAa,AAAb,aAAa,AACb,4BAAe,AAAf,eAAe,AACf,kBAAmB,CACpB,AACD,yFAEE,kBAAmB,CACpB,AACD,2BACE,YAAY,AACZ,oBAAa,AAAb,aAAa,AACb,0BAAsB,AAAtB,sBAAsB,AACtB,yBAA6B,AAA7B,6BAA6B,AAC7B,4BAAe,AAAf,cAAe,CAChB,AACD,yCACE,iBAAkB,CACnB,AAED,wEACE,cAAe,CAChB,AAED,wEACE,4BAAe,AAAf,cAAe,CAChB,AAED,4FACE,eAAgB,CACjB,AACD,2FACE,eAAgB,CACjB,AACD,2FACE,eAAgB,CACjB,AACD,0FACE,eAAgB,CACjB,AAED,yHACE,eAAgB,CACjB,AACD,wHACE,eAAgB,CACjB,AACD,wHACE,eAAgB,CACjB,AACD,uHACE,eAAgB,CACjB,AAUD,6BACE,kBAAyB,AAAzB,wBAAyB,CAE1B,AACD,yFAFE,+BAA2B,AAA3B,0BAA2B,CAI5B,AAKD,0BACE,iBAAkB,AAClB,gBAAgB,AAChB,WAAO,AAAP,OAAO,AACP,oBAAa,AAAb,aAAa,AACb,mBAAe,AAAf,cAAe,CAChB,AACD,+BACE,WAAW,AACX,cAAc,AACd,oBAAa,AAAb,aAAa,AACb,sBAAmB,AAAnB,kBAAmB,CACpB,AAED,+BACE,4BAAe,AAAf,eAAe,AACf,WAAY,CACb,AACD,0BACE,cAAc,AACd,WAAY,CACb,AAID,+BACE,4BAAe,AAAf,eAAe,AACf,oBAAa,AAAb,aAAa,AACb,2BAAuB,AAAvB,sBAAuB,CACxB,AAED,0BACE,4BAAe,AAAf,eAAe,AACf,iBAAkB,CACnB,AAKD,wBACE,4BAAe,AAAf,eAAe,AACf,iBAAkB,CACnB\",\"file\":\"styles.css\",\"sourcesContent\":[\"\\n/* -------  bracket container  ------- */\\n.bracketContainer {\\n  height:100%;\\n  display:flex;\\n  flex-flow:column wrap;\\n  border:0.4em solid #070707;\\n}\\n\\n/* -------  region container  ------- */\\n.regionContainer {\\n  display:flex;\\n  flex-basis:50%;\\n  background:#e4e4e4;\\n}\\n.regionContainer:first-child,\\n.regionContainer:last-child {\\n  background:#f5f5f5;\\n}\\n.gamesList {\\n  height:100%;\\n  display:flex;\\n  flex-direction:column;\\n  justify-content:space-around;\\n  flex-basis:30%;\\n}\\n.gamesList:nth-child(2n) {\\n  font-size:1.025em;\\n}\\n\\n.gamesList:nth-child(2n) .teamContainer {\\n  padding:16px 0;\\n}\\n\\n.gamesList:nth-child(2n) .logoContainer {\\n  flex-basis:40%;\\n}\\n\\n.gamesList:nth-of-type(odd) .teamContainer:nth-of-type(odd) {\\n  background:#888;\\n}\\n.gamesList:nth-of-type(odd) .teamContainer:nth-of-type(even) {\\n  background:#555;\\n}\\n.gamesList:nth-of-type(even) .teamContainer:nth-of-type(odd) {\\n  background:#999;\\n}\\n.gamesList:nth-of-type(even) .teamContainer:nth-of-type(even) {\\n  background:#666;\\n}\\n\\n.regionRight .gamesList:nth-of-type(odd) .teamContainer:nth-of-type(odd) {\\n  background:#555;\\n}\\n.regionRight  .gamesList:nth-of-type(odd) .teamContainer:nth-of-type(even) {\\n  background:#888;\\n}\\n.regionRight  .gamesList:nth-of-type(even) .teamContainer:nth-of-type(odd) {\\n  background:#666;\\n}\\n.regionRight  .gamesList:nth-of-type(even) .teamContainer:nth-of-type(even) {\\n  background:#999;\\n}\\n\\n\\n/*.gameItem .teamContainer:empty:nth-of-type(odd) {\\n  background:red;\\n}*/\\n\\n.regionRight, .regionLeft {\\n  composes:regionContainer;\\n}\\n.regionRight {\\n  justify-content:flex-end;\\n  flex-direction:row-reverse;\\n}\\n.regionRight .teamContainer {\\n  flex-direction:row-reverse;\\n}\\n.regionRight .infoContainer {\\n  /*justify-content:flex-end;*/\\n}\\n\\n.gameItem {\\n  font-size:0.725em;\\n  font-weight:700;\\n  flex:1;\\n  display:flex;\\n  flex-wrap:wrap;\\n}\\n.teamContainer {\\n  width:100%;\\n  padding:4px 0;\\n  display:flex;\\n  align-items:center;\\n}\\n\\n.logoContainer {\\n  flex-basis:20%;\\n  height:100%;\\n}\\n.teamLogo {\\n  display:block;\\n  height:100%;\\n}\\n.regionContainer:nth-last-of-type(-n+2) .infoContainer {\\n\\n}\\n.infoContainer {\\n  flex-basis:80%;\\n  display:flex;\\n  flex-direction:inherit;\\n}\\n\\n.teamSeed {\\n  flex-basis:10%;\\n  text-align:center;\\n}\\n\\n.teamName {\\n\\n}\\n.bullet {\\n  flex-basis:10%;\\n  text-align:center;\\n}\\n\"],\"sourceRoot\":\"\"}]);\n\n// exports\nexports.locals = {\n\t\"bracketContainer\": \"styles__bracketContainer___B38Sl\",\n\t\"regionContainer\": \"styles__regionContainer___3O4l-\",\n\t\"gamesList\": \"styles__gamesList___Si1xr\",\n\t\"teamContainer\": \"styles__teamContainer___PpgUe\",\n\t\"logoContainer\": \"styles__logoContainer___1MEnf\",\n\t\"regionRight\": \"styles__regionRight___2-sUj styles__regionContainer___3O4l-\",\n\t\"regionLeft\": \"styles__regionLeft___2nHve styles__regionContainer___3O4l-\",\n\t\"infoContainer\": \"styles__infoContainer___1oabR\",\n\t\"gameItem\": \"styles__gameItem___no2Cr\",\n\t\"teamLogo\": \"styles__teamLogo___lTS2e\",\n\t\"teamSeed\": \"styles__teamSeed___1UWPr\",\n\t\"teamName\": \"styles__teamName___2t3zP\",\n\t\"bullet\": \"styles__bullet___Ky2d3\"\n};"
+      "source": "exports = module.exports = require(\"../../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \".styles__bracketContainer___B38Sl{height:100%;display:-ms-flexbox;display:flex;-ms-flex-flow:column wrap;flex-flow:column wrap;border:.4em solid #f5f5f5}.styles__regionContainer___3O4l-{display:-ms-flexbox;display:flex;-ms-flex-preferred-size:50%;flex-basis:50%;background:#e4e4e4}.styles__regionContainer___3O4l-:first-child,.styles__regionContainer___3O4l-:last-child{background:#f5f5f5}.styles__gamesList___Si1xr{height:100%;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:distribute;justify-content:space-around;-ms-flex-preferred-size:30%;flex-basis:30%}.styles__gamesList___Si1xr:nth-child(2n){font-size:1.025em}.styles__gamesList___Si1xr:nth-child(2n) .styles__teamContainer___PpgUe{padding:16px 0}.styles__gamesList___Si1xr:nth-child(2n) .styles__logoContainer___1MEnf{-ms-flex-preferred-size:40%;flex-basis:40%}.styles__gamesList___Si1xr:nth-of-type(odd) .styles__teamContainer___PpgUe:nth-of-type(odd){background:#888}.styles__gamesList___Si1xr:nth-of-type(odd) .styles__teamContainer___PpgUe:nth-of-type(2n){background:#555}.styles__gamesList___Si1xr:nth-of-type(2n) .styles__teamContainer___PpgUe:nth-of-type(odd){background:#999}.styles__gamesList___Si1xr:nth-of-type(2n) .styles__teamContainer___PpgUe:nth-of-type(2n){background:#666}.styles__regionRight___2-sUj .styles__gamesList___Si1xr:nth-of-type(odd) .styles__teamContainer___PpgUe:nth-of-type(odd){background:#555}.styles__regionRight___2-sUj .styles__gamesList___Si1xr:nth-of-type(odd) .styles__teamContainer___PpgUe:nth-of-type(2n){background:#888}.styles__regionRight___2-sUj .styles__gamesList___Si1xr:nth-of-type(2n) .styles__teamContainer___PpgUe:nth-of-type(odd){background:#666}.styles__regionRight___2-sUj .styles__gamesList___Si1xr:nth-of-type(2n) .styles__teamContainer___PpgUe:nth-of-type(2n){background:#999}.styles__regionRight___2-sUj{-ms-flex-pack:end;justify-content:flex-end}.styles__regionRight___2-sUj,.styles__regionRight___2-sUj .styles__teamContainer___PpgUe{-ms-flex-direction:row-reverse;flex-direction:row-reverse}.styles__gameItem___no2Cr{font-size:.725em;font-weight:700;-ms-flex:1;flex:1;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.styles__teamContainer___PpgUe{width:100%;padding:4px 0;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}.styles__logoContainer___1MEnf{-ms-flex-preferred-size:20%;flex-basis:20%;height:100%}.styles__teamLogo___lTS2e{display:block;height:100%}.styles__infoContainer___1oabR{-ms-flex-preferred-size:80%;flex-basis:80%;display:-ms-flexbox;display:flex;-ms-flex-direction:inherit;flex-direction:inherit}.styles__teamSeed___1UWPr{-ms-flex-preferred-size:10%;flex-basis:10%;text-align:center}.styles__bullet___Ky2d3{-ms-flex-preferred-size:10%;flex-basis:10%;text-align:center}\", \"\", {\"version\":3,\"sources\":[\"/Users/zacarellano/Desktop/march-madness/app/components/Bracket/styles.css\"],\"names\":[],\"mappings\":\"AAEA,kCACE,YAAY,AACZ,oBAAa,AAAb,aAAa,AACb,0BAAsB,AAAtB,sBAAsB,AACtB,yBAA2B,CAC5B,AAGD,iCACE,oBAAa,AAAb,aAAa,AACb,4BAAe,AAAf,eAAe,AACf,kBAAmB,CACpB,AACD,yFAEE,kBAAmB,CACpB,AACD,2BACE,YAAY,AACZ,oBAAa,AAAb,aAAa,AACb,0BAAsB,AAAtB,sBAAsB,AACtB,yBAA6B,AAA7B,6BAA6B,AAC7B,4BAAe,AAAf,cAAe,CAChB,AACD,yCACE,iBAAkB,CACnB,AAED,wEACE,cAAe,CAChB,AAED,wEACE,4BAAe,AAAf,cAAe,CAChB,AAED,4FACE,eAAgB,CACjB,AACD,2FACE,eAAgB,CACjB,AACD,2FACE,eAAgB,CACjB,AACD,0FACE,eAAgB,CACjB,AAED,yHACE,eAAgB,CACjB,AACD,wHACE,eAAgB,CACjB,AACD,wHACE,eAAgB,CACjB,AACD,uHACE,eAAgB,CACjB,AAUD,6BACE,kBAAyB,AAAzB,wBAAyB,CAE1B,AACD,yFAFE,+BAA2B,AAA3B,0BAA2B,CAI5B,AAKD,0BACE,iBAAkB,AAClB,gBAAgB,AAChB,WAAO,AAAP,OAAO,AACP,oBAAa,AAAb,aAAa,AACb,mBAAe,AAAf,cAAe,CAChB,AACD,+BACE,WAAW,AACX,cAAc,AACd,oBAAa,AAAb,aAAa,AACb,sBAAmB,AAAnB,kBAAmB,CACpB,AAED,+BACE,4BAAe,AAAf,eAAe,AACf,WAAY,CACb,AACD,0BACE,cAAc,AACd,WAAY,CACb,AAID,+BACE,4BAAe,AAAf,eAAe,AACf,oBAAa,AAAb,aAAa,AACb,2BAAuB,AAAvB,sBAAuB,CACxB,AAED,0BACE,4BAAe,AAAf,eAAe,AACf,iBAAkB,CACnB,AAKD,wBACE,4BAAe,AAAf,eAAe,AACf,iBAAkB,CACnB\",\"file\":\"styles.css\",\"sourcesContent\":[\"\\n/* -------  bracket container  ------- */\\n.bracketContainer {\\n  height:100%;\\n  display:flex;\\n  flex-flow:column wrap;\\n  border:0.4em solid #f5f5f5;\\n}\\n\\n/* -------  region container  ------- */\\n.regionContainer {\\n  display:flex;\\n  flex-basis:50%;\\n  background:#e4e4e4;\\n}\\n.regionContainer:first-child,\\n.regionContainer:last-child {\\n  background:#f5f5f5;\\n}\\n.gamesList {\\n  height:100%;\\n  display:flex;\\n  flex-direction:column;\\n  justify-content:space-around;\\n  flex-basis:30%;\\n}\\n.gamesList:nth-child(2n) {\\n  font-size:1.025em;\\n}\\n\\n.gamesList:nth-child(2n) .teamContainer {\\n  padding:16px 0;\\n}\\n\\n.gamesList:nth-child(2n) .logoContainer {\\n  flex-basis:40%;\\n}\\n\\n.gamesList:nth-of-type(odd) .teamContainer:nth-of-type(odd) {\\n  background:#888;\\n}\\n.gamesList:nth-of-type(odd) .teamContainer:nth-of-type(even) {\\n  background:#555;\\n}\\n.gamesList:nth-of-type(even) .teamContainer:nth-of-type(odd) {\\n  background:#999;\\n}\\n.gamesList:nth-of-type(even) .teamContainer:nth-of-type(even) {\\n  background:#666;\\n}\\n\\n.regionRight .gamesList:nth-of-type(odd) .teamContainer:nth-of-type(odd) {\\n  background:#555;\\n}\\n.regionRight  .gamesList:nth-of-type(odd) .teamContainer:nth-of-type(even) {\\n  background:#888;\\n}\\n.regionRight  .gamesList:nth-of-type(even) .teamContainer:nth-of-type(odd) {\\n  background:#666;\\n}\\n.regionRight  .gamesList:nth-of-type(even) .teamContainer:nth-of-type(even) {\\n  background:#999;\\n}\\n\\n\\n/*.gameItem .teamContainer:empty:nth-of-type(odd) {\\n  background:red;\\n}*/\\n\\n.regionRight, .regionLeft {\\n  composes:regionContainer;\\n}\\n.regionRight {\\n  justify-content:flex-end;\\n  flex-direction:row-reverse;\\n}\\n.regionRight .teamContainer {\\n  flex-direction:row-reverse;\\n}\\n.regionRight .infoContainer {\\n  /*justify-content:flex-end;*/\\n}\\n\\n.gameItem {\\n  font-size:0.725em;\\n  font-weight:700;\\n  flex:1;\\n  display:flex;\\n  flex-wrap:wrap;\\n}\\n.teamContainer {\\n  width:100%;\\n  padding:4px 0;\\n  display:flex;\\n  align-items:center;\\n}\\n\\n.logoContainer {\\n  flex-basis:20%;\\n  height:100%;\\n}\\n.teamLogo {\\n  display:block;\\n  height:100%;\\n}\\n.regionContainer:nth-last-of-type(-n+2) .infoContainer {\\n\\n}\\n.infoContainer {\\n  flex-basis:80%;\\n  display:flex;\\n  flex-direction:inherit;\\n}\\n\\n.teamSeed {\\n  flex-basis:10%;\\n  text-align:center;\\n}\\n\\n.teamName {\\n\\n}\\n.bullet {\\n  flex-basis:10%;\\n  text-align:center;\\n}\\n\"],\"sourceRoot\":\"\"}]);\n\n// exports\nexports.locals = {\n\t\"bracketContainer\": \"styles__bracketContainer___B38Sl\",\n\t\"regionContainer\": \"styles__regionContainer___3O4l-\",\n\t\"gamesList\": \"styles__gamesList___Si1xr\",\n\t\"teamContainer\": \"styles__teamContainer___PpgUe\",\n\t\"logoContainer\": \"styles__logoContainer___1MEnf\",\n\t\"regionRight\": \"styles__regionRight___2-sUj styles__regionContainer___3O4l-\",\n\t\"regionLeft\": \"styles__regionLeft___2nHve styles__regionContainer___3O4l-\",\n\t\"infoContainer\": \"styles__infoContainer___1oabR\",\n\t\"gameItem\": \"styles__gameItem___no2Cr\",\n\t\"teamLogo\": \"styles__teamLogo___lTS2e\",\n\t\"teamSeed\": \"styles__teamSeed___1UWPr\",\n\t\"teamName\": \"styles__teamName___2t3zP\",\n\t\"bullet\": \"styles__bullet___Ky2d3\"\n};"
     },
     {
       "id": 140,
