@@ -6,15 +6,15 @@ import { colors } from 'helpers/tournament'
 
 console.log(colors)
 
-const Bracket = ({ games, teams, data }) => (
+const Bracket = ({ games, teams, data, round3 }) => (
   <main className={bracketContainer}>
-    { data.map((item, index) => <Region x={item} side={index <= 1 ? 'left' : 'right'} key={index} />) }
+    { data.map((item, index) => <Region x={item} round3={round3} side={index <= 1 ? 'left' : 'right'} key={index} />) }
   </main>
 )
 
-const Region = ({ x, teams, side }) => (
+const Region = ({ x, teams, side, round3 }) => (
   <section className={side === 'left' ? regionLeft : regionRight}>
-    <Round x={x} teams={teams} />
+    { x.map((item, index) => <Round x={item} key={index} teams={teams} />) }
   </section>
 )
 
@@ -26,8 +26,20 @@ const Round = ({ x, teams }) => (
 
 const Game = ({ away, home, seedBottom, seedTop }) => (
   <li className={gameItem}>
-    <Team seed={seedBottom} name={away.names.short} seo={away.names.seo} />
-    <Team seed={seedTop} name={home.names.short} seo={home.names.seo} />
+    {
+      away.isTop === 'T'
+        ? <Team seed={seedTop} name={away.names.short} seo={away.names.seo} />
+        : home.isTop === 'T'
+          ? <Team seed={seedTop} name={home.names.short} seo={home.names.seo} />
+          : null
+    }
+    {
+      away.isTop === 'F'
+        ? <Team seed={seedBottom} name={away.names.short} seo={away.names.seo} />
+        : home.isTop === 'F'
+          ? <Team seed={seedBottom} name={home.names.short} seo={home.names.seo} />
+          : null
+    }
   </li>
 )
 

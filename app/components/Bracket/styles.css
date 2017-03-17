@@ -29,6 +29,7 @@
 }
 .regionRight {
   justify-content:flex-end;
+  flex-direction:row-reverse;
 }
 .regionRight .teamContainer {
   flex-direction:row-reverse;
@@ -70,7 +71,7 @@
 
 .teamSeed {
   flex-basis:10%;
-  text-align:right;
+  text-align:center;
 }
 
 .teamName {
