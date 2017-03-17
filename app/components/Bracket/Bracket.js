@@ -1,18 +1,19 @@
 import React from 'react'
-import { bracketContainer, regionContainer, gamesList, gameItem,
-  teamContainer, teamLogo, teamName } from './styles.css'
+import { bracketContainer, regionLeft, regionRight, gamesList, gameItem,
+  teamContainer, teamLogo, teamName, teamSeed, bullet, infoContainer,
+  logoContainer } from './styles.css'
 import { colors } from 'helpers/tournament'
 
 console.log(colors)
 
 const Bracket = ({ games, teams, data }) => (
   <main className={bracketContainer}>
-    { data.map((item, index) => <Region x={item} key={index} />) }
+    { data.map((item, index) => <Region x={item} side={index <= 1 ? 'left' : 'right'} key={index} />) }
   </main>
 )
 
-const Region = ({ x, teams }) => (
-  <section className={regionContainer}>
+const Region = ({ x, teams, side }) => (
+  <section className={side === 'left' ? regionLeft : regionRight}>
     <Round x={x} teams={teams} />
   </section>
 )
@@ -42,8 +43,14 @@ const Team = ({ seed, name, seo }) => {
   const bg = { backgroundColor: colors[name] }
   return (
     <section className={teamContainer} style={bg}>
-      <span className={teamLogo} style={img}></span>
-      <span className={teamName}>{`${seed} - ${name}`}</span>
+      <div className={logoContainer}>
+        <span className={teamLogo} style={img}></span>
+      </div>
+      <div className={infoContainer}>
+        <span className={teamSeed}>{seed}</span>
+        <span className={bullet}>{'•'}</span>
+        <span className={teamName}>{name}</span>
+      </div>
     </section>
   )
 }
